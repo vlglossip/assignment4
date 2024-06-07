@@ -1,5 +1,38 @@
 /* RESUME PAGE ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
+header::after{
+    background: url("../images/background-computer1.jpg");
+    content: "";
+    display: block;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.content-wrap {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 1150px;
+    flex: 1 0 auto;
+}
+
 body {
     background-color: #FAF9F6;
     color: #224430;
@@ -48,14 +81,6 @@ header p {
     margin-right: 150px;
 }
 /* PROJECTS --------------------------------------------------------------------------------------------------------------------------------------------------*/
-.divider {
-    width: 1500px;
-    height: 300px;
-    background-image: url("../images/background-computer1.jpg"); /* Image from Arnel Hasanovic on Unsplash*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .project {
     display: grid;
@@ -71,6 +96,10 @@ header p {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+a {
+    background-color: lightgrey;
 }
 /* WORK EXPERIENCE -------------------------------------------------------------------------------------------------------------------------------------------*/
 .work {
@@ -95,13 +124,39 @@ header p {
     margin-left: 300px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    padding: 10px;
 }
 /* FOOTER ----------------------------------------------------------------------------------------------------------------------------------------------------*/
-footer img {
-    width: 40px;
-    height: 40px;
-}
-
 footer h2 {
     text-align: left;
+}
+
+footer {
+    background-color: ivory;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+footer a {
+    background-color: ivory;
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials img {
+    width: 32px;
+    height: 32px;
+}
+
+.socials img:hover {
+    opacity: 0.5;
+}
+
+.socials li {
+    display: inline-block;
+    margin-left: 10px;
 }
